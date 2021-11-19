@@ -1,0 +1,53 @@
+--------------------------------------------
+pos-label:  #help
+NOTE: Not using any target words from the file itself
+--------------------------------------------
+-------- Print Config --------
+TargetWords (29): ['-40', 'boots', 'cold', 'coming', 'day', 'fog', 'hope', 'jackets', 'need', 'nice', 'on', 'out', 'outside', 'perfect', 'pretty', 'rain', 'raining', 'snow', 'snowing', 'summer', 'sun', 'sunny', 'today', 'warm', 'was', 'weather', 'windy', 'winter', 'wish']
+-------- Print Run Info --------
+All words:126.  Target words:  5
+Non-Target words (66): ['911', 'a', 'all', 'alone', 'am', 'are', 'bad', 'bit', 'bothering', 'broken', 'call', "can't", 'daughter', 'dizzy', 'do', 'down', 'feel', 'feeling', 'feet', 'fine', 'for', 'get', 'have', 'headache', 'hello', 'help', 'how', 'hurt', 'husband', 'i', "i'm", 'is', 'it', 'just', 'knees', 'lamp', 'leave', 'lie', 'lights', 'listen', 'little', 'me', 'my', 'not', 'off', 'ok', 'ouch', 'phone', 'radio', 'really', 'so', 'son', 'stop', 'stuck', 'the', 'this', 'time', 'tired', 'to', 'turn', 'want', 'well', 'what', 'wife', 'work', 'you']
+-------- Evaluate Training Set --------
+TW FN: (  #negative) #help i am not feeling well
+TW FN: (  #negative) #help call for help
+TW FN: (  #negative) #help help me
+TW FN: (  #negative) #help get my son
+TW FN: (  #negative) #help get my daughter
+TW FN: (  #negative) #help get my wife
+TW FN: (  #negative) #help get my husband
+TW FN: (  #negative) #help i'm feeling really bad
+TW FN: (  #negative) #help i'm stuck
+TW FN: (  #negative) #help call 911
+TW FN: (  #negative) #help i feel dizzy
+TW TP: (       need) #help i need to lie down
+TW FN: (  #negative) #help i do not feel well
+TW TP: (       need) #help i need help
+TW FN: (  #negative) #help i feel a little off
+TW FN: (  #negative) #help i have a headache
+TW FP: (         on) #negative turn on lights
+TW FP: (         on) #negative turn on lamp
+TW TN: (  #negative) #negative i want to listen to the radio
+TW TN: (  #negative) #negative what time is it
+TW TN: (  #negative) #negative so so
+TW TN: (  #negative) #negative i feel so so
+TW TN: (  #negative) #negative just a bit tired
+TW TN: (  #negative) #negative my feet hurt
+TW TN: (  #negative) #negative leave me alone
+TW TN: (  #negative) #negative stop bothering to me
+TW TN: (  #negative) #negative my knees hurt
+TW TN: (  #negative) #negative my phone is broken
+TW TN: (  #negative) #negative i am fine
+TW TN: (  #negative) #negative i am ok
+TW TN: (  #negative) #negative not so bad
+TW TN: (  #negative) #negative all is fine
+TW TN: (  #negative) #negative how are you
+TW TN: (  #negative) #negative can't get this to work
+TW TN: (  #negative) #negative ouch
+TW TN: (  #negative) #negative hello
+TW FP: (       need) #negative i do not need help
+-------- Confusion Matrix --------
+   Predict |         Label
+-----------+----------------------
+           |      #help        not
+     #help |          2          3
+       not |         14         18

@@ -1,0 +1,187 @@
+--------------------------------------------
+ Test 02.  Testing I, II, and III 
+--------------------------------------------
+pos-features:  help get bad 911 on
+pos-label:  #help
+
+** Full Dataset (no preprocessing) *********
+-------- Print Config --------
+TargetWords (3): ['get', 'i', 'my']
+-------- Evaluate Training Set --------
+TW TP: (               i) #help i am not feeling well
+TW FN: (       #negative) #help call for help
+TW FN: (       #negative) #help help me
+TW TP: (             get) #help get my son
+TW TP: (             get) #help get my daughter
+TW TP: (             get) #help get my wife
+TW TP: (             get) #help get my husband
+TW FN: (       #negative) #help i'm feeling really bad
+TW FN: (       #negative) #help i'm stuck
+TW FN: (       #negative) #help call 911
+TW TP: (               i) #help i feel dizzy
+TW TP: (               i) #help i need to lie down
+TW TP: (               i) #help i do not feel well
+TW TP: (               i) #help i need help
+TW TP: (               i) #help i feel a little off
+TW TP: (               i) #help i have a headache
+TW TN: (       #negative) #negative turn on lights
+TW TN: (       #negative) #negative turn on lamp
+TW FP: (               i) #negative i want to listen to the radio
+TW TN: (       #negative) #negative what time is it
+TW TN: (       #negative) #negative so so
+TW FP: (               i) #negative i feel so so
+TW TN: (       #negative) #negative just a bit tired
+TW FP: (              my) #negative my feet hurt
+TW TN: (       #negative) #negative leave me alone
+TW TN: (       #negative) #negative stop bothering to me
+TW FP: (              my) #negative my knees hurt
+TW FP: (              my) #negative my phone is broken
+TW FP: (               i) #negative i am fine
+TW FP: (               i) #negative i am ok
+TW TN: (       #negative) #negative not so bad
+TW TN: (       #negative) #negative all is fine
+TW TN: (       #negative) #negative how are you
+TW FP: (             get) #negative can't get this to work
+TW TN: (       #negative) #negative ouch
+TW TN: (       #negative) #negative hello
+TW FP: (               i) #negative i do not need help
+-------- Confusion Matrix --------
+   Predict |         Label
+-----------+----------------------
+           |      #help        not
+     #help |         11          9
+       not |          5         12
+Accuracy:  0.62 = (11 + 12) / (11 + 12 + 9 + 5)
+Precision: 0.55 = 11 / (11 + 9)
+Recall:    0.69 = 11 / (11 + 5)
+
+** Full Dataset (with preproc, top N) ******
+-------- Print Config --------
+TargetWords (3): ['feel', 'get', 'help']
+-------- Evaluate Training Set --------
+TW FN: (       #negative) #help feeling well
+TW TP: (            help) #help call help
+TW TP: (            help) #help help
+TW TP: (             get) #help get son
+TW TP: (             get) #help get daughter
+TW TP: (             get) #help get wife
+TW TP: (             get) #help get husband
+TW FN: (       #negative) #help im feeling really bad
+TW FN: (       #negative) #help im stuck
+TW FN: (       #negative) #help call 911
+TW TP: (            feel) #help feel dizzy
+TW FN: (       #negative) #help need lie
+TW TP: (            feel) #help feel well
+TW TP: (            help) #help need help
+TW TP: (            feel) #help feel little
+TW FN: (       #negative) #help headache
+TW TN: (       #negative) #negative turn lights
+TW TN: (       #negative) #negative turn lamp
+TW TN: (       #negative) #negative want listen radio
+TW TN: (       #negative) #negative time
+TW TN: (       #negative) #negative 
+TW FP: (            feel) #negative feel
+TW TN: (       #negative) #negative bit tired
+TW TN: (       #negative) #negative feet hurt
+TW TN: (       #negative) #negative leave alone
+TW TN: (       #negative) #negative stop bothering
+TW TN: (       #negative) #negative knees hurt
+TW TN: (       #negative) #negative phone broken
+TW TN: (       #negative) #negative fine
+TW TN: (       #negative) #negative ok
+TW TN: (       #negative) #negative bad
+TW TN: (       #negative) #negative fine
+TW TN: (       #negative) #negative 
+TW FP: (             get) #negative cant get work
+TW TN: (       #negative) #negative ouch
+TW TN: (       #negative) #negative hello
+TW FP: (            help) #negative need help
+-------- Confusion Matrix --------
+   Predict |         Label
+-----------+----------------------
+           |      #help        not
+     #help |         10          3
+       not |          6         18
+Accuracy:  0.76 = (10 + 18) / (10 + 18 + 3 + 6)
+Precision: 0.77 = 10 / (10 + 3)
+Recall:    0.62 = 10 / (10 + 6)
+
+Does preprocessing improve PRA? (Not 100% apples vs. oranges.)
+
+** By folds (3) ****************************
+   *** Using Test Fold 0 *******************
+-------- Print Config --------
+TargetWords (5): ['feel', 'get', 'help', 'im', 'need']
+-------- Evaluate Training Set --------
+TW FN: (       #negative) #help feeling well
+TW TP: (             get) #help get son
+TW TP: (             get) #help get husband
+TW FN: (       #negative) #help call 911
+TW TP: (            feel) #help feel well
+TW FN: (       #negative) #help headache
+TW TN: (       #negative) #negative want listen radio
+TW FP: (            feel) #negative feel
+TW TN: (       #negative) #negative leave alone
+TW TN: (       #negative) #negative phone broken
+TW TN: (       #negative) #negative bad
+TW FP: (             get) #negative cant get work
+TW FP: (            need) #negative need help
+-------- Confusion Matrix --------
+   Predict |         Label
+-----------+----------------------
+           |      #help        not
+     #help |          3          3
+       not |          3          4
+Accuracy:  0.54 = (3 + 4) / (3 + 4 + 3 + 3)
+Precision: 0.5 = 3 / (3 + 3)
+Recall:    0.5 = 3 / (3 + 3)
+   *** Using Test Fold 1 *******************
+-------- Print Config --------
+TargetWords (3): ['feel', 'get', 'well']
+-------- Evaluate Training Set --------
+TW FN: (       #negative) #help call help
+TW TP: (             get) #help get daughter
+TW FN: (       #negative) #help im feeling really bad
+TW TP: (            feel) #help feel dizzy
+TW FN: (       #negative) #help need help
+TW TN: (       #negative) #negative turn lights
+TW TN: (       #negative) #negative time
+TW TN: (       #negative) #negative bit tired
+TW TN: (       #negative) #negative stop bothering
+TW TN: (       #negative) #negative fine
+TW TN: (       #negative) #negative fine
+TW TN: (       #negative) #negative ouch
+-------- Confusion Matrix --------
+   Predict |         Label
+-----------+----------------------
+           |      #help        not
+     #help |          2          0
+       not |          3          7
+Accuracy:  0.75 = (2 + 7) / (2 + 7 + 0 + 3)
+Precision:   1 = 2 / (2 + 0)
+Recall:    0.4 = 2 / (2 + 3)
+   *** Using Test Fold 2 *******************
+-------- Print Config --------
+TargetWords (6): ['call', 'feel', 'feeling', 'get', 'help', 'well']
+-------- Evaluate Training Set --------
+TW TP: (            help) #help help
+TW TP: (             get) #help get wife
+TW FN: (       #negative) #help im stuck
+TW FN: (       #negative) #help need lie
+TW TP: (            feel) #help feel little
+TW TN: (       #negative) #negative turn lamp
+TW TN: (       #negative) #negative 
+TW TN: (       #negative) #negative feet hurt
+TW TN: (       #negative) #negative knees hurt
+TW TN: (       #negative) #negative ok
+TW TN: (       #negative) #negative 
+TW TN: (       #negative) #negative hello
+-------- Confusion Matrix --------
+   Predict |         Label
+-----------+----------------------
+           |      #help        not
+     #help |          3          0
+       not |          2          7
+Accuracy:  0.83 = (3 + 7) / (3 + 7 + 0 + 2)
+Precision:   1 = 3 / (3 + 0)
+Recall:    0.6 = 3 / (3 + 2)

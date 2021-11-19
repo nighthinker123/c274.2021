@@ -1,0 +1,52 @@
+Name : Zixu(Andy) Yu
+ID #: 1722179
+CCID: zixu3
+CMPUT 274, Fall 2021
+Assignment1: ooclassifier
+
+This is an appended version of Paul Lu's ooclassifierbase.
+There is no copy of code from others for the class and methods I added.
+Discussion with Johnson Wu and Louis Ye.
+
+Included Files:
+	* ooclassifier.py
+	* README
+
+Running Instructions:
+	This program requires an input text file or a driver file to run.
+
+Notes and Assumptions:
+  The file ooclassifier contains 6 functions added by me:
+	1. preprocess_words(self, mode='') -> None:
+		Assume the modes are valid.
+		This method takes the words in the current training instance object and
+		preprocess them based on different mode. It updates the dictionary in the 		training instance.
+		Below are some basic methods I used in preprocess_words.
+		1. lowerCase(self, x : str) -> str
+			This function takes the string and convert it to lowercase. And 			then return it.
+		2. rmSymbols(self, x : str) -> str
+			This function take the string and check if the characters is 				alphanumeric. If it is, then add it to the new string. Return the 			new string.
+		3. rmNumbers(self, x : str) -> str
+			It checks if the string is all numbers. If it is, then return the 			original string. If not, then check if the characters is digits. 			If it's not a digits, then add it to the new string. Return the 			new string.
+		4. rmStopWord(self, x : str) -> str
+			It has a list containing all the stopWords. If the string is one 			of the stopWords in the list. Then remove the stopWords which 				basically return Null. Otherwise, return the original string.
+		5. process(self, sent : list, mode : str) -> list
+			This function has two parameters. The sent stands for sentence. 			It's a list containing all the words. The second parameter is mode 			which are full process, keep digits, keep stopWords and keep 				symbols. Based on the mode, the function will process the code in 			different process. It will return a list containing the processed 			word.
+	2. preprocess(self, mode='') -> None:
+		Assume the mode is valid.
+		This method iterate the words in all training instance in the training set 		and preprocess it based on different modes.
+	3. return_nfolds(self, num=3) -> list:
+		Assume num>= 1
+		Divides the training instances in the training set into different
+        	partitions or folds. It will return a list of TrainingSet objects. The num 		is the # of folds, and the default is 3.
+	4. copy() -> TraningSet:
+		Make a deepcopy a TrainingSet object that contains the same
+        	attributes as the original object. It will return the copied TrainingSet 		object.
+	5. add_training_set(self, tset) -> None:
+		Adds all the training instances of tset to the current
+        	TrainingSet object. It iterate every training instance in tset and store 		them in self. 
+	6. target_top_n(self, tset, num=5, label =''):
+		replace the current list of target words with a new list of target words
+        	based on word frequency calculated of the words.
+		It puts the words and frequency into a dictionary and sort them based on 		the frequency.
+  Except for the assumption of parameter mentioned in the methods. We assume the input file is not empty and the TrainingSet is not empty. 

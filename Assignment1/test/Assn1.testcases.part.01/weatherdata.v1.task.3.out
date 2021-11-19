@@ -1,0 +1,391 @@
+--------------------------------------------
+Task III
+--------------------------------------------
+pos-features:  outside today weather raining nice rain snow day winter cold warm snowing out hope boots sunny windy coming perfect need sun on was -40 jackets wish fog pretty summer
+pos-label:  #weather
+--------------------------------------------
+-------- Print Config --------
+TargetWords (29): ['-40', 'boots', 'cold', 'coming', 'day', 'fog', 'hope', 'jackets', 'need', 'nice', 'on', 'out', 'outside', 'perfect', 'pretty', 'rain', 'raining', 'snow', 'snowing', 'summer', 'sun', 'sunny', 'today', 'warm', 'was', 'weather', 'windy', 'winter', 'wish']
+-------- Evaluate Training Set --------
+TW TP: (       nice) #weather nice weather eh
+TW TP: (       snow) #weather snow is coming
+TW TP: (       cold) #weather too cold for september
+TW TP: (        sun) #weather what happend to the sun
+TW TP: (       snow) #weather i had to get my snow boots
+TW TP: (     winter) #weather winter jackets are out
+TW TP: (       rain) #weather rain on the weekend
+TW TP: (       snow) #weather snow before halloween
+TW TP: (       rain) #weather rain boots for sure
+TW FN: (  #negative) #weather wind is high
+TW TP: (    jackets) #weather jackets zipped today
+TW TP: (        day) #weather it is good day
+TW TP: (       warm) #weather it is warm outside
+TW TP: (    raining) #weather it is not raining
+TW TP: (    snowing) #weather it is not snowing
+TW FN: (  #negative) #weather it is clowdy
+TW TP: (    weather) #weather how's the weather today?
+TW TP: (        out) #weather the sun's out after so long
+TW FN: (  #negative) #weather clouds are over our head
+TW TP: (       hope) #weather i hope it does not snow today
+TW TP: (       hope) #weather i hope it stays warm outside
+TW TP: (       wish) #weather i wish it was raining
+TW TP: (       wish) #weather i wish it was snowing
+TW TP: (      windy) #weather it is so windy outside
+TW TP: (      today) #weather there's a slight chance of storm today
+TW TP: (    outside) #weather winds outside are making the trees move
+TW TP: (        sun) #weather what happened to the sun
+TW TP: (       need) #weather we need rain boots today
+TW FN: (  #negative) #weather cover yourself before going
+TW TP: (     winter) #weather winter is coming
+TW TP: (     winter) #weather winter is here
+TW TP: (     winter) #weather winter coats are required today
+TW TP: (    weather) #weather How is the weather today
+TW TP: (      sunny) #weather It is sunny today
+TW TP: (    raining) #weather It is raining dogs and cats today
+TW TP: (       nice) #weather What a nice day today
+TW FN: (  #negative) #weather it's so snowy
+TW TP: (       nice) #weather nice weather
+TW TP: (       nice) #weather nice weather we're having
+TW TP: (    snowing) #weather snowing already
+TW TP: (       rain) #weather i hate rain
+TW TP: (       rain) #weather i love rain
+TW TP: (    raining) #weather raining pretty hard
+TW TP: (    outside) #weather its pouring outside
+TW TP: (    raining) #weather raining cats and dogs
+TW TP: (       cold) #weather so cold out
+TW FN: (  #negative) #weather its chirstmas already
+TW TP: (     winter) #weather winter came early
+TW TP: (      sunny) #weather its bright and sunny
+TW TP: (     pretty) #weather pretty cloudy
+TW FN: (  #negative) #weather its hailing
+TW TP: (       hope) #weather hope weather is nice tomorrow
+TW TP: (    weather) #weather this weather is terrible
+TW TP: (       nice) #weather it is nice and sunny
+TW TP: (        day) #weather what a lovely day
+TW TP: (    raining) #weather why is it raining
+TW TP: (        fog) #weather I can't see in this fog
+TW TP: (      windy) #weather it's too windy
+TW TP: (    perfect) #weather a perfect day to go fishing
+TW TP: (    outside) #weather you'll get wet if you go outside
+TW TP: (    snowing) #weather it stopped snowing earlier
+TW TP: (    weather) #weather what's the weather forecast like
+TW TP: (    outside) #weather how hot is it outside
+TW FN: (  #negative) #weather it looks chilly
+TW TP: (        fog) #weather the fog is thick
+TW TP: (       rain) #weather it will rain soon
+TW TP: (     summer) #weather not a typical summer day
+TW TP: (         on) #weather expect thundershowers on Friday
+TW TP: (    outside) #weather just above freezing outside
+TW TP: (       cold) #weather arn't you cold outside
+TW TP: (    perfect) #weather perfect weather
+TW TP: (       warm) #weather is it warm enough for shorts
+TW FN: (  #negative) #weather look a tornado
+TW TP: (       cold) #weather Its so cold
+TW TP: (    raining) #weather Its raining outside
+TW TP: (       snow) #weather I hate the snow
+TW TP: (       nice) #weather Its so nice outside
+TW TP: (       cold) #weather Why is it so cold in Edmonton?
+TW TP: (     summer) #weather I miss summer already
+TW TP: (      windy) #weather It might get windy
+TW TP: (       need) #weather I need something warm to drink
+TW TP: (        -40) #weather Its -40 degrees
+TW TP: (        -40) #weather Its -40 outside
+TW FN: (  #negative) #weather Don't forget to take your gloves
+TW TN: (  #negative) #negative good food
+TW FP: (       need) #negative i need a coffee
+TW TN: (  #negative) #negative my back aches
+TW TN: (  #negative) #negative hey give that back
+TW TN: (  #negative) #negative tim hortons is too busy
+TW TN: (  #negative) #negative see you in sub
+TW TN: (  #negative) #negative call me
+TW FP: (       snow) #negative i love snow cones
+TW TN: (  #negative) #negative foot long falafel
+TW TN: (  #negative) #negative hot tea is a good thing
+TW TN: (  #negative) #negative hot pockets for sure
+TW TN: (  #negative) #negative going home early
+TW TN: (  #negative) #negative i left my laptop at home
+TW TN: (  #negative) #negative all is fine
+TW TN: (  #negative) #negative how are you
+TW TN: (  #negative) #negative cannot get this to work
+TW TN: (  #negative) #negative ouch
+TW TN: (  #negative) #negative hello
+TW FP: (       need) #negative i do not need help
+TW TN: (  #negative) #negative no worries
+TW FP: (    outside) #negative we should not go outside
+TW TN: (  #negative) #negative the street is blocked
+TW TN: (  #negative) #negative the car's broken
+TW TN: (  #negative) #negative the bike's stuck
+TW TN: (  #negative) #negative the road is under construction
+TW TN: (  #negative) #negative there are children playing
+TW TN: (  #negative) #negative birds are singing
+TW TN: (  #negative) #negative i can hear music
+TW TN: (  #negative) #negative people are dancing
+TW TN: (  #negative) #negative assignments are due tonight
+TW TN: (  #negative) #negative homework has to be done
+TW TN: (  #negative) #negative there is a dodgeball drop in
+TW TN: (  #negative) #negative final game of the season tonight
+TW FP: (       hope) #negative i hope they win their game
+TW TN: (  #negative) #negative how are you doing today?
+TW TN: (  #negative) #negative is everything okay?
+TW TN: (  #negative) #negative my phone is broken
+TW TN: (  #negative) #negative there is a car crash down the street
+TW FP: (        was) #negative there was a fire drill yesterday
+TW TN: (  #negative) #negative we should go and eat something
+TW TN: (  #negative) #negative i don't feel so good
+TW FP: (       cold) #negative im cold
+TW TN: (  #negative) #negative how are you
+TW TN: (  #negative) #negative whats up
+TW TN: (  #negative) #negative i have school tomorrow
+TW FP: (       need) #negative i need to get up early later
+TW TN: (  #negative) #negative i love cats
+TW TN: (  #negative) #negative i love dogs
+TW FP: (       nice) #negative dogs and cats are nice
+TW TN: (  #negative) #negative all is fine
+TW TN: (  #negative) #negative im good
+TW TN: (  #negative) #negative what year is it
+TW TN: (  #negative) #negative how old are you
+TW TN: (  #negative) #negative do you like this jacket
+TW TN: (  #negative) #negative i like food
+TW TN: (  #negative) #negative when are you leaving
+TW TN: (  #negative) #negative let's go shopping
+TW FP: (    outside) #negative I'm going outside
+TW TN: (  #negative) #negative look at my new shorts
+TW FP: (        day) #negative have a good day
+TW TN: (  #negative) #negative thank you very much
+TW FP: (      today) #negative how are you today
+TW TN: (  #negative) #negative I am fine
+TW TN: (  #negative) #negative you are ugly
+TW TN: (  #negative) #negative have a good night
+TW FP: (       nice) #negative nice job everyone
+TW TN: (  #negative) #negative I can see him over there
+TW FP: (      today) #negative see you later today
+TW FP: (       cold) #negative my hands are cold
+TW TN: (  #negative) #negative the food is hot
+TW TN: (  #negative) #negative Thor is the god of thunder
+TW TN: (  #negative) #negative put the ice cream back
+TW TN: (  #negative) #negative my ice cream is melting
+TW FP: (    weather) #negative translate the word weather to german
+TW FP: (       cold) #negative it's cold inside the house
+TW TN: (  #negative) #negative my coffee is hot
+TW TN: (  #negative) #negative do you like my ice sculpture
+TW FP: (         on) #negative I slippled on the ice.
+TW FP: (       need) #negative I need new boots.
+TW TN: (  #negative) #negative How's it going?
+TW TN: (  #negative) #negative I have so many assignments.
+TW TN: (  #negative) #negative I like your bagpack
+TW TN: (  #negative) #negative I like this class
+TW TN: (  #negative) #negative Have you done the modules?
+TW TN: (  #negative) #negative Have you finished the MOOC?
+TW TN: (  #negative) #negative When is the midterm?
+TW TN: (  #negative) #negative When did you go to sleep?
+TW TN: (  #negative) #negative I didn't have breakfast
+TW FP: (       wish) #negative I wish I had more time
+TW TN: (  #negative) #negative What class do you have after this?
+TW TN: (  #negative) #negative Are you going to careers day?
+-------- Confusion Matrix --------
+   Predict |         Label
+-----------+----------------------
+           |   #weather        not
+  #weather |         74         20
+       not |         10         71
+********************************************
+-------- Print Config --------
+TargetWords (29): ['-40', 'boots', 'cold', 'coming', 'day', 'fog', 'hope', 'jackets', 'need', 'nice', 'on', 'out', 'outside', 'perfect', 'pretty', 'rain', 'raining', 'snow', 'snowing', 'summer', 'sun', 'sunny', 'today', 'warm', 'was', 'weather', 'windy', 'winter', 'wish']
+-------- Evaluate Training Set --------
+TW TP: (       nice) #weather nice weather eh
+TW TP: (       cold) #weather too cold for september
+TW TP: (       snow) #weather i had to get my snow boots
+TW TP: (       rain) #weather rain on the weekend
+TW TP: (       rain) #weather rain boots for sure
+TW TP: (    jackets) #weather jackets zipped today
+TW TP: (       warm) #weather it is warm outside
+TW TP: (    snowing) #weather it is not snowing
+TW TP: (    weather) #weather how's the weather today?
+TW FN: (  #negative) #weather clouds are over our head
+TW TP: (       hope) #weather i hope it stays warm outside
+TW TP: (       wish) #weather i wish it was snowing
+TW TP: (      today) #weather there's a slight chance of storm today
+TW TP: (        sun) #weather what happened to the sun
+TW FN: (  #negative) #weather cover yourself before going
+TW TP: (     winter) #weather winter is here
+TW TP: (    weather) #weather How is the weather today
+TW TP: (    raining) #weather It is raining dogs and cats today
+TW FN: (  #negative) #weather it's so snowy
+TW TP: (       nice) #weather nice weather we're having
+TW TP: (       rain) #weather i hate rain
+TW TP: (    raining) #weather raining pretty hard
+TW TP: (    raining) #weather raining cats and dogs
+TW FN: (  #negative) #weather its chirstmas already
+TW TP: (      sunny) #weather its bright and sunny
+TW FN: (  #negative) #weather its hailing
+TW TP: (    weather) #weather this weather is terrible
+TW TP: (        day) #weather what a lovely day
+TW TP: (        fog) #weather I can't see in this fog
+TW TP: (    perfect) #weather a perfect day to go fishing
+TW TP: (    snowing) #weather it stopped snowing earlier
+TW TP: (    outside) #weather how hot is it outside
+TW TP: (        fog) #weather the fog is thick
+TW TP: (     summer) #weather not a typical summer day
+TW TP: (    outside) #weather just above freezing outside
+TW TP: (    perfect) #weather perfect weather
+TW FN: (  #negative) #weather look a tornado
+TW TP: (    raining) #weather Its raining outside
+TW TP: (       nice) #weather Its so nice outside
+TW TP: (     summer) #weather I miss summer already
+TW TP: (       need) #weather I need something warm to drink
+TW TP: (        -40) #weather Its -40 outside
+TW TN: (  #negative) #negative good food
+TW TN: (  #negative) #negative my back aches
+TW TN: (  #negative) #negative tim hortons is too busy
+TW TN: (  #negative) #negative call me
+TW TN: (  #negative) #negative foot long falafel
+TW TN: (  #negative) #negative hot pockets for sure
+TW TN: (  #negative) #negative i left my laptop at home
+TW TN: (  #negative) #negative how are you
+TW TN: (  #negative) #negative ouch
+TW FP: (       need) #negative i do not need help
+TW FP: (    outside) #negative we should not go outside
+TW TN: (  #negative) #negative the car's broken
+TW TN: (  #negative) #negative the road is under construction
+TW TN: (  #negative) #negative birds are singing
+TW TN: (  #negative) #negative people are dancing
+TW TN: (  #negative) #negative homework has to be done
+TW TN: (  #negative) #negative final game of the season tonight
+TW TN: (  #negative) #negative how are you doing today?
+TW TN: (  #negative) #negative my phone is broken
+TW FP: (        was) #negative there was a fire drill yesterday
+TW TN: (  #negative) #negative i don't feel so good
+TW TN: (  #negative) #negative how are you
+TW TN: (  #negative) #negative i have school tomorrow
+TW TN: (  #negative) #negative i love cats
+TW FP: (       nice) #negative dogs and cats are nice
+TW TN: (  #negative) #negative im good
+TW TN: (  #negative) #negative how old are you
+TW TN: (  #negative) #negative i like food
+TW TN: (  #negative) #negative let's go shopping
+TW TN: (  #negative) #negative look at my new shorts
+TW TN: (  #negative) #negative thank you very much
+TW TN: (  #negative) #negative I am fine
+TW TN: (  #negative) #negative have a good night
+TW TN: (  #negative) #negative I can see him over there
+TW FP: (       cold) #negative my hands are cold
+TW TN: (  #negative) #negative Thor is the god of thunder
+TW TN: (  #negative) #negative my ice cream is melting
+TW FP: (       cold) #negative it's cold inside the house
+TW TN: (  #negative) #negative do you like my ice sculpture
+TW FP: (       need) #negative I need new boots.
+TW TN: (  #negative) #negative I have so many assignments.
+TW TN: (  #negative) #negative I like this class
+TW TN: (  #negative) #negative Have you finished the MOOC?
+TW TN: (  #negative) #negative When did you go to sleep?
+TW FP: (       wish) #negative I wish I had more time
+TW TN: (  #negative) #negative Are you going to careers day?
+-------- Confusion Matrix --------
+   Predict |         Label
+-----------+----------------------
+           |   #weather        not
+  #weather |         36          8
+       not |          6         38
+Accuracy:  0.84 = (36 + 38) / (36 + 38 + 8 + 6)
+Precision: 0.82 = 36 / (36 + 8)
+Recall:    0.86 = 36 / (36 + 6)
+********************************************
+-------- Print Config --------
+TargetWords (29): ['-40', 'boots', 'cold', 'coming', 'day', 'fog', 'hope', 'jackets', 'need', 'nice', 'on', 'out', 'outside', 'perfect', 'pretty', 'rain', 'raining', 'snow', 'snowing', 'summer', 'sun', 'sunny', 'today', 'warm', 'was', 'weather', 'windy', 'winter', 'wish']
+-------- Evaluate Training Set --------
+TW TP: (       snow) #weather snow is coming
+TW TP: (        sun) #weather what happend to the sun
+TW TP: (     winter) #weather winter jackets are out
+TW TP: (       snow) #weather snow before halloween
+TW FN: (  #negative) #weather wind is high
+TW TP: (        day) #weather it is good day
+TW TP: (    raining) #weather it is not raining
+TW FN: (  #negative) #weather it is clowdy
+TW TP: (        out) #weather the sun's out after so long
+TW TP: (       hope) #weather i hope it does not snow today
+TW TP: (       wish) #weather i wish it was raining
+TW TP: (      windy) #weather it is so windy outside
+TW TP: (    outside) #weather winds outside are making the trees move
+TW TP: (       need) #weather we need rain boots today
+TW TP: (     winter) #weather winter is coming
+TW TP: (     winter) #weather winter coats are required today
+TW TP: (      sunny) #weather It is sunny today
+TW TP: (       nice) #weather What a nice day today
+TW TP: (       nice) #weather nice weather
+TW TP: (    snowing) #weather snowing already
+TW TP: (       rain) #weather i love rain
+TW TP: (    outside) #weather its pouring outside
+TW TP: (       cold) #weather so cold out
+TW TP: (     winter) #weather winter came early
+TW TP: (     pretty) #weather pretty cloudy
+TW TP: (       hope) #weather hope weather is nice tomorrow
+TW TP: (       nice) #weather it is nice and sunny
+TW TP: (    raining) #weather why is it raining
+TW TP: (      windy) #weather it's too windy
+TW TP: (    outside) #weather you'll get wet if you go outside
+TW TP: (    weather) #weather what's the weather forecast like
+TW FN: (  #negative) #weather it looks chilly
+TW TP: (       rain) #weather it will rain soon
+TW TP: (         on) #weather expect thundershowers on Friday
+TW TP: (       cold) #weather arn't you cold outside
+TW TP: (       warm) #weather is it warm enough for shorts
+TW TP: (       cold) #weather Its so cold
+TW TP: (       snow) #weather I hate the snow
+TW TP: (       cold) #weather Why is it so cold in Edmonton?
+TW TP: (      windy) #weather It might get windy
+TW TP: (        -40) #weather Its -40 degrees
+TW FN: (  #negative) #weather Don't forget to take your gloves
+TW FP: (       need) #negative i need a coffee
+TW TN: (  #negative) #negative hey give that back
+TW TN: (  #negative) #negative see you in sub
+TW FP: (       snow) #negative i love snow cones
+TW TN: (  #negative) #negative hot tea is a good thing
+TW TN: (  #negative) #negative going home early
+TW TN: (  #negative) #negative all is fine
+TW TN: (  #negative) #negative cannot get this to work
+TW TN: (  #negative) #negative hello
+TW TN: (  #negative) #negative no worries
+TW TN: (  #negative) #negative the street is blocked
+TW TN: (  #negative) #negative the bike's stuck
+TW TN: (  #negative) #negative there are children playing
+TW TN: (  #negative) #negative i can hear music
+TW TN: (  #negative) #negative assignments are due tonight
+TW TN: (  #negative) #negative there is a dodgeball drop in
+TW FP: (       hope) #negative i hope they win their game
+TW TN: (  #negative) #negative is everything okay?
+TW TN: (  #negative) #negative there is a car crash down the street
+TW TN: (  #negative) #negative we should go and eat something
+TW FP: (       cold) #negative im cold
+TW TN: (  #negative) #negative whats up
+TW FP: (       need) #negative i need to get up early later
+TW TN: (  #negative) #negative i love dogs
+TW TN: (  #negative) #negative all is fine
+TW TN: (  #negative) #negative what year is it
+TW TN: (  #negative) #negative do you like this jacket
+TW TN: (  #negative) #negative when are you leaving
+TW FP: (    outside) #negative I'm going outside
+TW FP: (        day) #negative have a good day
+TW FP: (      today) #negative how are you today
+TW TN: (  #negative) #negative you are ugly
+TW FP: (       nice) #negative nice job everyone
+TW FP: (      today) #negative see you later today
+TW TN: (  #negative) #negative the food is hot
+TW TN: (  #negative) #negative put the ice cream back
+TW FP: (    weather) #negative translate the word weather to german
+TW TN: (  #negative) #negative my coffee is hot
+TW FP: (         on) #negative I slippled on the ice.
+TW TN: (  #negative) #negative How's it going?
+TW TN: (  #negative) #negative I like your bagpack
+TW TN: (  #negative) #negative Have you done the modules?
+TW TN: (  #negative) #negative When is the midterm?
+TW TN: (  #negative) #negative I didn't have breakfast
+TW TN: (  #negative) #negative What class do you have after this?
+-------- Confusion Matrix --------
+   Predict |         Label
+-----------+----------------------
+           |   #weather        not
+  #weather |         38         12
+       not |          4         33
+Accuracy:  0.82 = (38 + 33) / (38 + 33 + 12 + 4)
+Precision: 0.76 = 38 / (38 + 12)
+Recall:    0.9 = 38 / (38 + 4)
